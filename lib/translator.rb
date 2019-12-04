@@ -12,6 +12,7 @@ def load_library(emoticonYAML)
     japanese = value[1]
     
     emoticonExtract['get_meaning'][japanese] = meaning
+   
     emoticonExtract['get_emoticon'][english] = japanese
   end
   emoticonExtract
