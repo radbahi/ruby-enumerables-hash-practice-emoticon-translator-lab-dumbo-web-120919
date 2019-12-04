@@ -1,11 +1,7 @@
 require 'yaml'
-require 'pry'
-#emoticon_file = YAML.load_file('./lib/emoticons.yml')
-#emoticon = '(#^.^#)'
 
-
-def load_library	def load_library(emoticon_file)
-  # code goes here	  emoticons = YAML.load_file('./lib/emoticons.yml')
+def load_library(emoticon_file)
+ 
 
   emoticon_lib = {'get_meaning'  => {},
                   'get_emoticon' => {} }
