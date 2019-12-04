@@ -25,7 +25,7 @@ def get_japanese_emoticon(emoticonYAML, emoticon)
 end
 
 def get_english_meaning(emoticonYAML, emoticon)
-  emoticon_lib = load_library(emoticonYAML)
-  english_meaning = emoticon_lib['get_meaning'][emoticon]
-  english_meaning ? english_meaning : 'Sorry, that emoticon was not found'
+  emoticonExtract = load_library(emoticonYAML)
+  englishEmoticon = emoticonExtract['get_meaning'][emoticon]
+  englishEmoticon ? englishEmoticon : 'Sorry, that emoticon was not found'
 end
