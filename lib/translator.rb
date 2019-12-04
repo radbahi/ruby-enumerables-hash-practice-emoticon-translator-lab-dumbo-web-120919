@@ -6,7 +6,7 @@ def load_library(emoticonYAML)
   emoticonExtract = {'get_meaning'  => {},
                   'get_emoticon' => {} }
 
-  emoticonList.each do |meaning, value|
+  emoticonLoad.each do |meaning, value|
    
     english = value[0]
     japanese = value[1]
