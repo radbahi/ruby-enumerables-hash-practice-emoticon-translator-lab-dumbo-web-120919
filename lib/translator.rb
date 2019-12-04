@@ -8,12 +8,12 @@ def load_library(emoticonYAML)
 
   emoticonLoad.each do |meaning, value|
    
-    english = value[0]
-    japanese = value[1]
+    englishEmoticon = value[0]
+    japaneseEmoticon = value[1]
     
-    emoticonExtract['get_meaning'][japanese] = meaning
+    emoticonExtract['get_meaning'][japaneseEmoticon] = meaning
    
-    emoticonExtract['get_emoticon'][english] = japanese
+    emoticonExtract['get_emoticon'][englishEmoticon] = japanese
   end
   emoticonExtract
 end
